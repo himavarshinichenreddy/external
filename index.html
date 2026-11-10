@@ -2,18 +2,27 @@
 <html>
 
 <head>
-    <title>Banking Application</title>
+    <title>Event Registration</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Banking Application</h1>
+    <h2>Event Registration Form</h2>
 
-    <p>Account Balance: ₹<span id="balance">1000</span></p>
+    <input id="n" placeholder="Full Name">
+    <input id="e" placeholder="Email Address">
+    <input id="p" placeholder="Phone Number">
+    <input id="g" placeholder="Gender">
+    <input id="c" placeholder="College Name">
+    <input id="d" placeholder="Department">
+    <input id="y" placeholder="Year of Study">
+    <input id="v" placeholder="Event Selection">
 
-    <input type="number" id="amount" placeholder="Enter amount">
+    <br>
+    <button onclick="reg()">Register</button>
+    <button onclick="resetForm()">Reset</button>
 
-    <button onclick="deposit()">Deposit</button>
+    <p id="msg"></p>
 
     <script src="script.js"></script>
 </body>
